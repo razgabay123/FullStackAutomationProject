@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Environment>
+    <!--general -->
+    <WaitTime>2</WaitTime>
+
+    <!--Web-->
+    <Browser>Chrome</Browser>
+    <URL>https://atidcollege.co.il/workshops/avengers/exercise/</URL>
+    <login-csv>D:\Automation\test_automation_final_project\ddt\hero_logins.csv</login-csv>
+
+    <!--Mobile-->
+    <Mobile_Device>Android</Mobile_Device>
+    <UDID>d6497e1d</UDID>
+    <App_Package>com.shivgadhia.android.ukMortgageCalc</App_Package>
+    <App_Activity>.MainActivity</App_Activity>
+    <Bundle_ID>com.shivgadhia.ukMortgageCalc</Bundle_ID>
+    <Appium_server>http://localhost:4730/wd/hub</Appium_server>
+    <calculations_csv>D:\Automation\test_automation_final_project\ddt\mortgage_calculations.csv</calculations_csv>
+    <swipe_dur>200</swipe_dur>
+
+    <!--API-->
+    <API_URL>https://reqres.in/api/</API_URL>
+    <API_DDT>D:\Automation\test_automation_final_project\ddt\ids_ddt.csv</API_DDT>
+
+    <!--Allure-->
+    <screenshots_path>D:\Automation\test_automation_final_project\allure-screen-shots</screenshots_path>
+
+    <!--Electron-->
+    <Electron_App>C:/Users/user/AppData/Local/Programs/todolist/Todolist.exe</Electron_App>
+    <Electron_Driver>D:/Automation/electronDriver/electrondriver.exe</Electron_Driver>
+
+    <!--Desktop-->
+    <Application_Name>Microsoft.WindowsCalculator_8wekyb3d8bbwe!App</Application_Name>
+    <WinAppDriver_Service>127.0.0.1:4723</WinAppDriver_Service>
+
+    <!-- DataBase -->
+    <DB_name>D:\Automation\Employees.db</DB_name>
+</Environment>
