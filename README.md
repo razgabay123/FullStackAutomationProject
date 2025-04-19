@@ -2,6 +2,8 @@
 
 This is a full-featured, multi-platform **test automation framework** built with Python. It supports **Web**, **Mobile**, **API**, **Desktop**, and **Electron** automation using a modular architecture based on the **Page Object Model (POM)**, **Workflows**, and **Data-Driven Testing (DDT)**. Integrated with **Allure Reports** for rich visual test reporting.
 
+### ([Sample video](https://github.com/user-attachments/assets/2482df07-7b11-41b0-b2a5-9c03a4890007))
+
 ---
 ## 📌 Highlights
 - Modular structure for reusability and maintenance
@@ -17,6 +19,10 @@ This is a full-featured, multi-platform **test automation framework** built with
 ---
 
 ## 🧰 Tech Stack
+
+
+
+
 
 - **Language:** Python
 - **Test Framework:** Pytest
