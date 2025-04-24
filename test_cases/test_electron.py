@@ -20,7 +20,7 @@ class Test_Electron:
 		flows.create_task("World")
 		Verifications.verify_equals(flows.get_number_of_tasks(), 3)
 	
-	@allure.title("test02: Delete tasks")
+	@allure.title("test03: Delete tasks")
 	@allure.description("this test deletes all the tasks, and verifies that there are none")
 	def test_03_delete_tasks(self):
 		flows.delete_tasks()
