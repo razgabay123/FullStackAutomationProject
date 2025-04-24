@@ -13,6 +13,7 @@ class Electron_Flows:
 	def create_task(task_description):
 		UiActions.update_text(pages.todolist.get_create(), task_description)
 		UiActions.update_text(pages.todolist.get_create(), Keys.RETURN)
+		time.sleep(1.5)
 		
 	@staticmethod
 	@allure.step("get the number of tasks")
@@ -23,6 +24,6 @@ class Electron_Flows:
 	@allure.step("Delete tasks")
 	def delete_tasks():
 		for x in range(Electron_Flows.get_number_of_tasks()):
-			time.sleep(0.2)
+			time.sleep(0.4)
 			UiActions.mouse_hover_tooltip(pages.todolist.get_deletes()[0])
 		
