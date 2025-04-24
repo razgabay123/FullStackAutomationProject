@@ -14,7 +14,7 @@ This is a full-featured, multi-platform **test automation framework** built with
 
 - Centralized actions and utilities
 
-- Suppots CI/CD intergration with Allure for reporting
+- Supports CI/CD integration with Allure for reporting
 
 ---
 
@@ -59,8 +59,3 @@ Folder -	Description:
 ## 💡 Future Ideas
 - Dockerize test environment
 
-- Integrate with Jenkins or GitHub Actions
-
-- Add mock server for API testing
-
-- Implement parallel test execution
