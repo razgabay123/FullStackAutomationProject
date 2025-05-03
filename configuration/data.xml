@@ -8,6 +8,11 @@
     <URL>https://atidcollege.co.il/workshops/avengers/exercise/</URL>
     <login-csv>D:\Automation\test_automation_final_project\ddt\hero_logins.csv</login-csv>
 
+    <!--Playwright Web-->
+    <PW-browser>Webkit</PW-browser>
+    <PW-URL>https:\\automationbookstore.dev</PW-URL>
+    <filter_csv>D:\Automation\test_automation_final_project\ddt\search_ddt.csv</filter_csv>
+
     <!--Mobile-->
     <Mobile_Device>Android</Mobile_Device>
     <UDID>d6497e1d</UDID>

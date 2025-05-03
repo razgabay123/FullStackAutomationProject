@@ -15,6 +15,9 @@ import appium.webdriver
 from utilities.common_ops import get_data
 from utilities.event_listener import EventListener
 from utilities.manage_pages import ManagePages
+from playwright.sync_api import sync_playwright
+
+from utilities.playwright_listener import attach_playwright_listeners
 
 driver = None
 action = None
@@ -38,6 +41,18 @@ def init_web_driver(request):
 	yield
 	time.sleep(2)
 	driver.quit()
+
+
+@pytest.fixture(scope='class')
+def init_playwright_driver(request):
+	p, browser, context, page = get_playwright_driver()
+	attach_playwright_listeners(page)
+	globals()['driver'] = page
+	request.cls.driver = page
+	ManagePages.init_web_pages()  # or a new method like init_playwright_pages() if needed
+	yield
+	browser.close()
+	p.stop()
 
 
 # the configuration of Appium driver, initiates the driver + App
@@ -90,10 +105,10 @@ def init_desktop_driver(request):
 def init_db_connection(request):
 	my_db = get_data("DB_name")
 	db = sqlite3.connect(my_db)
-	
+
 	from extensions.DB_actions import DB_Actions
 	DB_Actions.database = db
-	
+
 	request.cls.database = db
 	yield
 	db.close()
@@ -159,6 +174,24 @@ def get_firefox():
 def get_edge():
 	edge_driver = selenium.webdriver.Edge(EdgeChromiumDriverManager().install())
 	return edge_driver
+
+
+def get_playwright_driver():
+	p = sync_playwright().start()
+	browser_type = get_data('PW-browser').lower()
+	if browser_type == "chrome" or browser_type == "chromium":
+		browser = p.chromium.launch(headless=False, channel="chrome", slow_mo=int(get_data('WaitTime')) * 250)
+	elif browser_type == "firefox":
+		browser = p.firefox.launch(headless=False, slow_mo=int(get_data('WaitTime')) * 250)
+	elif browser_type == "webkit":
+		browser = p.webkit.launch(headless=False, slow_mo=int(get_data('WaitTime')) * 250)
+	else:
+		raise Exception("Unsupported Playwright browser")
+	context = browser.new_context()
+	page = context.new_page()
+	page.set_default_timeout(int(get_data('WaitTime')) * 1000)
+	page.goto(get_data("PW-URL"))
+	return p, browser, context, page
 
 
 # function to boot android devices

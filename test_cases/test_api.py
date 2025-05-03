@@ -17,9 +17,10 @@ class Test_API:
 	
 	@allure.title("Test03: get all of page 1 and 2's employees but shows only their data")
 	@allure.description("this test gets the data of all the employees and excludes unrelevant data")
-	def test_03_get_all_users_data_only(self):
-		flows.API_Flows.get_all_users_data_only(1, 200)
-		flows.API_Flows.get_all_users_data_only(2, 200)
+	@pytest.mark.parametrize("data_set", [1, 2])
+	def test_03_get_all_users_data_only(self, data_set):
+		flows.API_Flows.get_all_users_data_only(data_set, 200)
+		# flows.API_Flows.get_all_users_data_only(2, 200)
 		
 	@allure.title("Test04: create an employee")
 	@allure.description("this test creates a new user in the server, however the data doesnt really update")
