@@ -59,5 +59,6 @@ Folder -	Description:
 ---
 
 ## 💡 Future Ideas
+- Add Playwright tests
 - Dockerize test environment
 
