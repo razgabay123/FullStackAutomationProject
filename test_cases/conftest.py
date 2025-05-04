@@ -49,7 +49,7 @@ def init_playwright_driver(request):
 	attach_playwright_listeners(page)
 	globals()['driver'] = page
 	request.cls.driver = page
-	ManagePages.init_web_pages()  # or a new method like init_playwright_pages() if needed
+	  # or a new method like init_playwright_pages() if needed
 	yield
 	browser.close()
 	p.stop()
@@ -189,7 +189,8 @@ def get_playwright_driver():
 		raise Exception("Unsupported Playwright browser")
 	context = browser.new_context()
 	page = context.new_page()
-	page.set_default_timeout(int(get_data('WaitTime')) * 1000)
+	ManagePages.init_pw_web_pages(page)
+	page.set_default_timeout(int(get_data('WaitTime')) * 5000)
 	page.goto(get_data("PW-URL"))
 	return p, browser, context, page
 

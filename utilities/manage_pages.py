@@ -37,8 +37,8 @@ class ManagePages:
 
 	# playwright-web
 	@staticmethod
-	def init_pw_web_pages(self):
-		globals()['pw_web_bookstore'] = BookstorePage(conf.driver)
+	def init_pw_web_pages(driver):
+		globals()['pw_web_bookstore'] = BookstorePage(driver)
 
 	# mobile
 	@staticmethod
