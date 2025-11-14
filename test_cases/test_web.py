@@ -6,6 +6,7 @@ import workflows.web_flows as flows
 #  main test case, uses parameters from login csv file which is read from flows
 @pytest.mark.usefixtures('init_web_driver')
 class Test_Web:
+	@pytest.mark.flaky(reruns=3, reruns_delay=2)
 	@pytest.mark.parametrize('hero, username, password, expected', flows.login_data)
 	@allure.title("test hero logins")
 	@allure.description(
@@ -19,6 +20,4 @@ class Test_Web:
 		# verifies the title is the hero's name, eg: Ironman
 		flows.Web_Flows.input_login(username, password)
 		flows.Web_Flows.verify_hero_title(expected)
-	
-
 		

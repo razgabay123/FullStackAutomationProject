@@ -4,10 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a5473ae-8799-487b-86ba-c183a56aa8dd" name="Changes" comment="add playwright files">
+    <list default="true" id="8a5473ae-8799-487b-86ba-c183a56aa8dd" name="Changes" comment="allure">
+      <change beforePath="$PROJECT_DIR$/.idea/csv-editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration/data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/data.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/api_actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/api_actions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/touch_actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/touch_actions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/ui_actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/ui_actions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/verifications.py" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/verifications.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_objects/desktop_objects/calculator_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_objects/desktop_objects/calculator_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_objects/electron_objects/todolist_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_objects/electron_objects/todolist_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_objects/mobile_objects/calculator_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_objects/mobile_objects/calculator_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_objects/mobile_objects/saved_calculations_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_objects/mobile_objects/saved_calculations_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_objects/pw_web_objects/bookstore_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_objects/pw_web_objects/bookstore_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_objects/web_objects/page_transitioned_to.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_objects/web_objects/page_transitioned_to.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_cases/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/test_playwright.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_playwright.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/test_web.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_web.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/common_ops.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/common_ops.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utilities/manage_pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/manage_pages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/api_flows.py" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/api_flows.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/playwright_flows.py" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/playwright_flows.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/web_flows.py" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/web_flows.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,104 +67,216 @@
     <option name="showLibraryContents" value="true" />
     <option name="sortKey" value="BY_TIME_DESCENDING" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for test_api.Test_API.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_api.Test_API.test_01_get_all_books.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_api.Test_API.test_02_get_book_by_id.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_api.Test_API.test_03_get_all_users_data_only.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_api.Test_API.test_05_update_user.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_api.Test_API.test_06_get_user_by_id.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_api.Test_API.test_07_delete_user.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_desktop.Test_Desktop.test_01_calculate_simple_sum.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_mobile.Test_Mobile.test_mortgage_calculator_save.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_api.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_automation_final_project.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_data_base.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_desktop.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_electron.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_mobile.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_playwright.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_web.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest in test_playwright.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.DB_actions.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.api_actions.executor&quot;: &quot;Run&quot;,
-    &quot;Python.api_flows.executor&quot;: &quot;Run&quot;,
-    &quot;Python.conftest.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.manage_pages.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.mobile_flows.executor&quot;: &quot;Run&quot;,
-    &quot;Python.verifications.executor&quot;: &quot;Run&quot;,
-    &quot;Python.web_flows.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Automation/test_automation_final_project&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for test_api.Test_API.executor": "Run",
+    "Python tests.Python tests for test_api.Test_API.test_01_get_all_books.executor": "Run",
+    "Python tests.Python tests for test_api.Test_API.test_02_get_book_by_id.executor": "Run",
+    "Python tests.Python tests for test_api.Test_API.test_03_get_all_users_data_only.executor": "Run",
+    "Python tests.Python tests for test_api.Test_API.test_05_update_user.executor": "Run",
+    "Python tests.Python tests for test_api.Test_API.test_06_get_user_by_id.executor": "Run",
+    "Python tests.Python tests for test_api.Test_API.test_07_delete_user.executor": "Run",
+    "Python tests.Python tests for test_desktop.Test_Desktop.test_01_calculate_simple_sum.executor": "Run",
+    "Python tests.Python tests for test_mobile.Test_Mobile.test_mortgage_calculator_save.executor": "Run",
+    "Python tests.Python tests in test_api.py.executor": "Run",
+    "Python tests.Python tests in test_automation_final_project.executor": "Run",
+    "Python tests.Python tests in test_data_base.py.executor": "Run",
+    "Python tests.Python tests in test_desktop.py.executor": "Run",
+    "Python tests.Python tests in test_electron.py.executor": "Run",
+    "Python tests.Python tests in test_mobile.py.executor": "Run",
+    "Python tests.Python tests in test_playwright.py.executor": "Run",
+    "Python tests.Python tests in test_web.py.executor": "Run",
+    "Python tests.pytest for test_web.Test_Web.executor": "Run",
+    "Python tests.pytest in test_data.py.executor": "Run",
+    "Python tests.pytest in test_desktop.py.executor": "Run",
+    "Python tests.pytest in test_playwright.py.executor": "Run",
+    "Python tests.pytest in test_web.py.executor": "Run",
+    "Python.DB_actions.executor": "Debug",
+    "Python.api_actions.executor": "Run",
+    "Python.api_flows.executor": "Run",
+    "Python.conftest.executor": "Debug",
+    "Python.convert_tif_to_pdf.executor": "Run",
+    "Python.locust_tests.executor": "Run",
+    "Python.manage_pages.executor": "Debug",
+    "Python.mobile_flows.executor": "Run",
+    "Python.pytest.executor": "Run",
+    "Python.run_performance_tests.executor": "Run",
+    "Python.verifications.executor": "Run",
+    "Python.web_flows.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Automation/test_automation_final_project_python",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Automation\test_automation_final_project\test_cases" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Automation\test_automation_final_project\test-results\reports" />
+      <recent name="D:\Automation\test_automation_final_project\test_cases\test_performance" />
       <recent name="D:\Automation\test_automation_final_project\py_ddt" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Python tests for test_api.Test_API.test_03_get_all_users_data_only" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for test_web.Test_Web">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="test_automation_final_project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_cases" />
+      <option name="SDK_NAME" value="Python 3.12 (test_automation_final_project)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="convert_tif_to_pdf" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="test_automation_final_project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (test_automation_final_project)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utilities" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_api.Test_API.test_03_get_all_users_data_only&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utilities/convert_tif_to_pdf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_desktop.Test_Desktop.test_01_calculate_simple_sum" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="locust_tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="test_automation_final_project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_cases" />
+      <option name="SDK_NAME" value="Python 3.12 (test_automation_final_project)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/performence_tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_desktop.Test_Desktop.test_01_calculate_simple_sum&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/performence_tests/locust_tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_automation_final_project" type="tests" factoryName="py.test" nameIsGenerated="true">
+    <configuration name="pytest" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="test_automation_final_project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="SDK_NAME" value="Python 3.12 (test_automation_final_project)" />
       <option name="WORKING_DIRECTORY" value="D:\Automation\test_automation_final_project" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="pytest" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run_performance_tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="test_automation_final_project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (test_automation_final_project)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/performance_tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/performance_tests/run_performance_tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_web.Test_Web" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="test_automation_final_project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_cases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;D:\\Automation\\test_automation_final_project&quot;" />
+      <option name="_new_target" value="&quot;test_web.Test_Web&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in D:/Automation/test_automation_final_project/performance_tests/test_data.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="test_automation_final_project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/performance_tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/performance_tests/test_data.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Python tests.pytest in test_automation_final_project" />
-      <item itemvalue="Python tests.Python tests for test_api.Test_API.test_03_get_all_users_data_only" />
-      <item itemvalue="Python tests.Python tests for test_desktop.Test_Desktop.test_01_calculate_simple_sum" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_api.Test_API.test_03_get_all_users_data_only" />
-        <item itemvalue="Python tests.Python tests for test_desktop.Test_Desktop.test_01_calculate_simple_sum" />
+        <item itemvalue="Python tests.pytest for test_web.Test_Web" />
+        <item itemvalue="Python.convert_tif_to_pdf" />
+        <item itemvalue="Python tests.pytest in D:/Automation/test_automation_final_project/performance_tests/test_data.py" />
+        <item itemvalue="Python.run_performance_tests" />
+        <item itemvalue="Python.locust_tests" />
       </list>
     </recent_temporary>
   </component>
@@ -229,7 +360,23 @@
       <option name="project" value="LOCAL" />
       <updated>1746282555254</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add playwright files">
+      <option name="closed" value="true" />
+      <created>1746351791509</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1746351791509</updated>
+    </task>
+    <task id="LOCAL-00010" summary="allure">
+      <option name="closed" value="true" />
+      <created>1746351868082</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1746351868082</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,7 +398,8 @@
     <MESSAGE value="Fix typos, change future ideas" />
     <MESSAGE value="add API key to api_actions" />
     <MESSAGE value="add playwright files" />
-    <option name="LAST_COMMIT_MESSAGE" value="add playwright files" />
+    <MESSAGE value="allure" />
+    <option name="LAST_COMMIT_MESSAGE" value="allure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

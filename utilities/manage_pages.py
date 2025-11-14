@@ -2,7 +2,6 @@
 from page_objects.mobile_objects.calculator_page import Calculator_Page
 from page_objects.web_objects.login_page import Login_Page
 from page_objects.electron_objects.todolist_page import TaskPage
-import test_cases.conftest as conf
 from page_objects.web_objects.main_page import Main_Page
 from page_objects.web_objects.page_transitioned_to import Transitioned_Page
 from page_objects.mobile_objects.saved_calculations_page import Saved_Calculations_Page
@@ -31,6 +30,7 @@ class ManagePages:
 	# web
 	@staticmethod
 	def init_web_pages():
+		import test_cases.conftest as conf
 		globals()['web_main'] = Main_Page(conf.driver)
 		globals()['web_login'] = Login_Page(conf.driver)
 		globals()['web_transition'] = Transitioned_Page(conf.driver)
@@ -43,16 +43,19 @@ class ManagePages:
 	# mobile
 	@staticmethod
 	def init_mobile_pages():
+		import test_cases.conftest as conf
 		globals()['mobile_calculator'] = Calculator_Page(conf.driver)
 		globals()['saved_calculations'] = Saved_Calculations_Page(conf.driver)
 	
 	# electron
 	@staticmethod
 	def init_electron_pages():
+		import test_cases.conftest as conf
 		globals()['todolist'] = TaskPage(conf.driver)
 	
 	# desktop
 	@staticmethod
 	def init_desktop_pages():
+		import test_cases.conftest as conf
 		globals()['calculator'] = Calculator(conf.driver)
 		

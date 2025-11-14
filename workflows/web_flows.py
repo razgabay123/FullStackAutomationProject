@@ -43,16 +43,68 @@ class Web_Flows:
 	# function for inputing user + pass
 	@staticmethod
 	def input_login(username: str, password: str):
-		UiActions.update_text(pages.web_login.get_username_input(), username)
-		UiActions.update_text(pages.web_login.get_password_input(), password)
-		UiActions.click(pages.web_login.get_login_button())
+		try:
+			username_element = pages.web_login.get_username_input()
+			UiActions.update_text(username_element, username)
+		except Exception as e:
+			ops.attach_file(conftest.driver)
+			raise Exception(
+				f"Failed to input username '{username}' during login. "
+				f"Element may not be visible or interactable. "
+				f"Current URL: {conftest.driver.current_url}. "
+				f"Error: {str(e)}"
+			) from e
+		try:
+			password_element = pages.web_login.get_password_input()
+			UiActions.update_text(password_element, password)
+		except Exception as e:
+			ops.attach_file(conftest.driver)
+			raise Exception(
+				f"Failed to input password '{password}' during login. "
+				f"Element may not be visible or interactable. "
+				f"Current URL: {conftest.driver.current_url}. "
+				f"Error: {str(e)}"
+			) from e
+		try:
+			login_button = pages.web_login.get_login_button()
+			UiActions.click(login_button)
+		except Exception as e:
+			ops.attach_file(conftest.driver)
+			raise Exception(
+				  f"Failed to click login button after entering credentials for '{username}'. "
+            f"Credentials were entered successfully. "
+            f"Current URL: {conftest.driver.current_url}. "
+            f"Error: {str(e)}"
+        ) from e
 	
 	# function for verifying the hero name title, eg: ironman
 	@staticmethod
 	def verify_hero_title(expected: str):
-		ops.wait(conftest.driver, ops.For.ELEMENT_DISPLAYED, hero_title)
-		actual = pages.web_transition.get_hero_title().text
-		Verifications.verify_equals(actual, expected)
+		try:
+			ops.wait(conftest.driver, ops.For.ELEMENT_DISPLAYED, hero_title)
+
+		except Exception as e:
+			ops.attach_file(conftest.driver)
+			raise Exception(
+				f"Failed to verify hero title '{expected}'. "
+				f"Element may not be visible or interactable. "
+				f"Current URL: {conftest.driver.current_url}. "
+				f"Error: {str(e)}"
+			) from e
+
+		try:
+			title_element = pages.web_transition.get_hero_title()
+			actual = title_element.text
+			Verifications.verify_equals(actual, expected)
+
+		except Exception as e:
+			ops.attach_file(conftest.driver)
+			raise Exception(
+				f"Failed to verify hero title '{expected}'. "
+				f"Element may not be visible or interactable. "
+				f"Current URL: {conftest.driver.current_url}. "
+				f"Error: {str(e)}"
+			) from e
 	
 	# function to go back to the main page at the start
 	@staticmethod

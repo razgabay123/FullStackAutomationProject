@@ -24,6 +24,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\ddt\performance_test_data.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\ddt\search_ddt.csv">
           <value>
             <Attribute>

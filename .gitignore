@@ -1,0 +1,35 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# Test reports
+allure-report/
+allure-results/
+allure-screen-shots/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
+.env
+.env.local
+.env.*.local
+.env.production
+.env.staging
+.env.development
+
+# But keep the example file (so others know what to create)
+!.env.example

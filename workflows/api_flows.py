@@ -44,9 +44,9 @@ class API_Flows:
 	@allure.step("Register a user")
 	def register_user(data, expected_response):
 		response = action.register(data)
-		staus = response.status_code
+		status = response.status_code
 		print(response.json(), "\n")
-		Verifications.verify_equals(staus, expected_response)
+		Verifications.verify_equals(status, expected_response)
 		
 	@staticmethod
 	@allure.step("update a user")

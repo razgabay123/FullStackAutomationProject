@@ -6,29 +6,29 @@
     <!--Web-->
     <Browser>Chrome</Browser>
     <URL>https://atidcollege.co.il/workshops/avengers/exercise/</URL>
-    <login-csv>D:\Automation\test_automation_final_project\ddt\hero_logins.csv</login-csv>
+    <login-csv>ddt/hero_logins.csv</login-csv>
 
     <!--Playwright Web-->
     <PW-browser>Webkit</PW-browser>
     <PW-URL>https:\\automationbookstore.dev</PW-URL>
-    <filter_csv>D:\Automation\test_automation_final_project\ddt\search_ddt.csv</filter_csv>
+    <filter_csv>ddt/search_ddt.csv</filter_csv>
 
     <!--Mobile-->
     <Mobile_Device>Android</Mobile_Device>
-    <UDID>d6497e1d</UDID>
+    <UDID>emulator-5554</UDID>
     <App_Package>com.shivgadhia.android.ukMortgageCalc</App_Package>
     <App_Activity>.MainActivity</App_Activity>
     <Bundle_ID>com.shivgadhia.ukMortgageCalc</Bundle_ID>
-    <Appium_server>http://localhost:4730/wd/hub</Appium_server>
-    <calculations_csv>D:\Automation\test_automation_final_project\ddt\mortgage_calculations.csv</calculations_csv>
+    <Appium_server>http://localhost:4723/wd/hub</Appium_server>
+    <calculations_csv>ddt/mortgage_calculations.csv</calculations_csv>
     <swipe_dur>200</swipe_dur>
 
     <!--API-->
     <API_URL>https://reqres.in/api/</API_URL>
-    <API_DDT>D:\Automation\test_automation_final_project\ddt\ids_ddt.csv</API_DDT>
+    <API_DDT>ddt/ids_ddt.csv</API_DDT>
 
     <!--Allure-->
-    <screenshots_path>D:\Automation\test_automation_final_project\allure-screen-shots</screenshots_path>
+    <screenshots_path>allure-screen-shots</screenshots_path>
 
     <!--Electron-->
     <Electron_App>C:/Users/user/AppData/Local/Programs/todolist/Todolist.exe</Electron_App>
@@ -39,5 +39,10 @@
     <WinAppDriver_Service>127.0.0.1:4723</WinAppDriver_Service>
 
     <!-- DataBase -->
-    <DB_name>D:\Automation\Employees.db</DB_name>
+    <DB_name>database/Employees.db</DB_name>
+
+    <!-- Performance -->
+    <Host>https://reqres.in</Host>
+    <API_KEY>reqres-free-v1</API_KEY>
+
 </Environment>

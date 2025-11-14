@@ -1,0 +1,16 @@
+version: '3'
+services:
+  automation-tests:
+    build: .
+    privileged: true  # Required for KVM virtualization
+    volumes:
+      - .:/app
+      - /dev/kvm:/dev/kvm  # Required for hardware acceleration
+    environment:
+      - ANDROID_AVD=test_device
+      - APPIUM_HOST=localhost
+      - APPIUM_PORT=4723
+      - EMULATOR_ARGS=-no-window -gpu swiftshader_indirect -no-audio -no-boot-anim
+    working_dir: /app
+    # Override the default command if needed
+    # command: /app/run_tests.sh -v test_cases/test_mobile.py

@@ -1,4 +1,3 @@
-import allure
 import utilities.common_ops as ops
 from extensions.playwright_ui_actions import PlayWrightActions as action
 import utilities.manage_pages as pages
@@ -7,13 +6,13 @@ from extensions.verifications import Verifications
 
 class PlaywrightFlows:
     @staticmethod
-    @allure.step("fill search bar")
     def fill_search_bar(value):
+        """Fill the search bar with the given value"""
         action.fill_input(pages.pw_web_bookstore.search_input, value)
 
     @staticmethod
-    @allure.step("verify the number of books shown on the page")
     def verify_shown_books(number):
+        """Verify the number of books shown on the page"""
         shown_books = pages.pw_web_bookstore.get_visible_book_count()
         Verifications.verify_equals(shown_books, number)
 

@@ -1,8 +1,64 @@
+import os
 import csv
 import allure
+from pathlib import Path
+from typing import Optional
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from dotenv import load_dotenv
 import xml.etree.ElementTree as ET
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Mapping from XML node names to environment variable names
+XML_TO_ENV_MAPPING = {
+    'WaitTime': 'WAIT_TIME',
+    'Browser': 'BROWSER',
+    'URL': 'WEB_URL',
+    'login-csv': 'LOGIN_CSV',
+    'PW-browser': 'PLAYWRIGHT_BROWSER',
+    'PW-URL': 'PLAYWRIGHT_URL',
+    'filter_csv': 'FILTER_CSV',
+    'Mobile_Device': 'MOBILE_DEVICE',
+    'UDID': 'UDID',
+    'App_Package': 'APP_PACKAGE',
+    'App_Activity': 'APP_ACTIVITY',
+    'Bundle_ID': 'BUNDLE_ID',
+    'Appium_server': 'APPIUM_SERVER',
+    'calculations_csv': 'CALCULATIONS_CSV',
+    'swipe_dur': 'SWIPE_DURATION',
+    'API_URL': 'API_URL',
+    'API_DDT': 'API_DDT_CSV',
+    'screenshots_path': 'SCREENSHOTS_PATH',
+    'Electron_App': 'ELECTRON_APP_PATH',
+    'Electron_Driver': 'ELECTRON_DRIVER_PATH',
+    'Application_Name': 'APPLICATION_NAME',
+    'WinAppDriver_Service': 'WINAPPDRIVER_SERVICE',
+    'DB_name': 'DATABASE_PATH',
+    'Host': 'PERFORMANCE_TEST_HOST',
+    'API_KEY': 'API_KEY',
+}
+
+
+def _convert_xml_name_to_env_name(xml_name: str) -> str:
+    """
+    Converts XML node name to environment variable name.
+    
+    Args:
+        xml_name: XML node name (e.g., 'PW-browser', 'login-csv')
+    
+    Returns:
+        Environment variable name (e.g., 'PLAYWRIGHT_BROWSER', 'LOGIN_CSV')
+    """
+    # Check mapping first
+    if xml_name in XML_TO_ENV_MAPPING:
+        return XML_TO_ENV_MAPPING[xml_name]
+    
+    # Fallback: convert to UPPER_SNAKE_CASE
+    # Replace hyphens and spaces with underscores, then uppercase
+    env_name = xml_name.replace('-', '_').replace(' ', '_').upper()
+    return env_name
 
 
 ####################
@@ -60,19 +116,58 @@ class Save:
 # driver: selenium driver parameter
 #####################
 def attach_file(driver):
-	image = r"D:\Automation\test_automation_final_project\allure-screen-shots/screen.png"
+	image = "allure-screen-shots/screen.png"
 	driver.get_screenshot_as_file(image)
 	allure.attach.file(image, attachment_type=allure.attachment_type.PNG)
 	
 	
 #####################
-# get_data: reads data from external xml
-# node_name: string parameter
+# get_data: reads data from environment variables (.env) or XML file (fallback)
+# Priority: Environment variable > XML file
+# node_name: string parameter (XML node name)
 # return a string of the node's value
 #####################
-def get_data(node_name):
-	root = ET.parse(r"D:\Automation\test_automation_final_project\configuration\data.xml").getroot()
-	return root.find('.//' + node_name).text
+def get_data(node_name: str) -> str:
+	"""
+	Retrieves configuration value from environment variables or XML file.
+	
+	Priority order:
+	1. Environment variable (.env file)
+	2. XML configuration file (fallback)
+	
+	Args:
+		node_name: XML node name (e.g., 'WaitTime', 'API_URL', 'PW-browser')
+	
+	Returns:
+		String value from environment variable or XML node.
+	
+	Raises:
+		KeyError: If configuration not found in either environment or XML.
+	"""
+	# Convert XML node name to environment variable name
+	env_var_name = _convert_xml_name_to_env_name(node_name)
+	
+	# Try to get from environment variable first
+	env_value = os.getenv(env_var_name)
+	if env_value:
+		return env_value
+	
+	# Fallback to XML file
+	try:
+		xml_path = Path("configuration/data.xml")
+		if xml_path.exists():
+			root = ET.parse(str(xml_path)).getroot()
+			node = root.find(f'.//{node_name}')
+			if node is not None and node.text:
+				return node.text
+	except (FileNotFoundError, ET.ParseError, AttributeError):
+		pass
+	
+	# If not found in either place, raise error
+	raise KeyError(
+		f"Configuration '{node_name}' not found. "
+		f"Checked environment variable '{env_var_name}' and XML file 'configuration/data.xml'"
+	)
 
 
 #####################
