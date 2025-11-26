@@ -22,5 +22,4 @@ class Main_Page():
 	
 	def get_thor(self) -> WebElement:
 		return self.driver.find_element(thor[0], thor[1])
-
-	
+# Last updated: 2025-11-26

@@ -67,4 +67,4 @@ print("-" * 60)
 print("If you see values from 'ENV (.env)', your .env file is working!")
 print("If you see values from 'XML (fallback)', .env is not set, using XML.")
 print("=" * 60)
-
+# Last updated: 2025-11-26

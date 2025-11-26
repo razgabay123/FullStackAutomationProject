@@ -54,3 +54,4 @@ class MyReqRes(HttpUser):
             else:
                 # print the response JSON for debugging purposes
                 print(response.json())
+# Last updated: 2025-11-26

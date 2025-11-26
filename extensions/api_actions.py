@@ -49,4 +49,4 @@ class API_Actions:
 	def delete(data) -> requests.Response:
 		response = requests.delete(f"{get_data('API_URL')}users{data}", headers=headers)
 		return response
-	
+# Last updated: 2025-11-26

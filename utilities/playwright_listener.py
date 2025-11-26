@@ -3,3 +3,4 @@ def attach_playwright_listeners(page):
     page.on("response", lambda response: print(f"[RES] {response.status} {response.url}"))
     page.on("console", lambda msg: print(f"[CONSOLE] {msg.type}: {msg.text}"))
     page.on("pageerror", lambda error: print(f"[ERROR] {error}"))
+# Last updated: 2025-11-26

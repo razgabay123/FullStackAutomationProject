@@ -18,4 +18,5 @@ setup(
     author="Raz",
     description="Test Automation Framework",
     python_requires=">=3.8",
-) 
+)
+# Last updated: 2025-11-26
