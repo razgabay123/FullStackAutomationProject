@@ -1,5 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"this test clicks on the hero pictures, then inputs their credentials, logins, then verifies the hero's title over IMDB","3848","test hero logins","test_cases","Sun Apr 20 11:43:36 IDT 2025","passed","Sun Apr 20 11:43:40 IDT 2025","TestWeb","test_web","",""
-"this test clicks on the hero pictures, then inputs their credentials, logins, then verifies the hero's title over IMDB","4832","test hero logins","test_cases","Sun Apr 20 11:43:31 IDT 2025","passed","Sun Apr 20 11:43:36 IDT 2025","TestWeb","test_web","",""
-"this test clicks on the hero pictures, then inputs their credentials, logins, then verifies the hero's title over IMDB","3937","test hero logins","test_cases","Sun Apr 20 11:43:43 IDT 2025","passed","Sun Apr 20 11:43:47 IDT 2025","TestWeb","test_web","",""
-"this test clicks on the hero pictures, then inputs their credentials, logins, then verifies the hero's title over IMDB","3658","test hero logins","test_cases","Sun Apr 20 11:43:40 IDT 2025","passed","Sun Apr 20 11:43:43 IDT 2025","TestWeb","test_web","",""
