@@ -30,7 +30,7 @@ This is a full-featured, multi-platform **test automation framework** built with
 - **Test Framework:** Pytest
 - **Automation Tools:** Selenium, Appium, Requests, Pywinauto, Playwright
 - **Reporting:** Allure
-- **Data Handling:** CSV, XML
+- **Data Handling:** CSV, .env
 - **Design Patterns:** Page Object Model, Workflows, DDT
 
 ---
@@ -58,6 +58,4 @@ Folder -	Description:
 - **requirements.txt**	Python dependencies list
 ---
 
-## 💡 Future Ideas
-- Dockerize test environment
 
