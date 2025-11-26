@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a5473ae-8799-487b-86ba-c183a56aa8dd" name="Changes" comment="allure">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8a5473ae-8799-487b-86ba-c183a56aa8dd" name="Changes" comment="&#10;refactor: migrate configuration to .env and improve code qualityMajor refactoring to improve security, maintainability, and code quality:Configuration:- Migrate from XML to .env files for better security- Add .env.example template with comprehensive documentation- Update get_data() to prioritize .env over XML fallback- Remove data.xml (backed up as data.xml.backup)Code Quality:- Fix API actions: POST/PUT now correctly send JSON instead of strings- Fix driver initialization: properly set module-level variables for imports- Add type hints to common_ops.py and api_actions.py- Make headless mode configurable via HEADLESS env variable- Fix fixture scoping to reuse browser for parametrized testsBug Fixes:- Fix driver NoneType errors in ui_actions.py- Fix API key loading with proper fallback handling- Improve Appium server URL construction (supports APPIUM_SERVER or HOST+PORT)Performance Testing:- Add Locust-based performance tests (test_cases/test_performance/)- Implement performance monitoring with system resource tracking- Add performance reporting utilities (HTML, CSV, JSON exports)- Configure performance tests to use .env for host and API keyDocker Support:- Add comprehensive Dockerfile for containerized test execution- Add docker-compose.yml for easy test orchestration- Support for Android emulator and Appium in containers- Automated test execution script in Docker environmentDocumentation:- Add comprehensive docstrings to key functions- Create .env.example with detailed comments- Update .gitignore to exclude .env filesBreaking Changes: None - XML fallback still works for backward compatibility" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +18,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -355,7 +354,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746351868082</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="&#10;refactor: migrate configuration to .env and improve code qualityMajor refactoring to improve security, maintainability, and code quality:Configuration:- Migrate from XML to .env files for better security- Add .env.example template with comprehensive documentation- Update get_data() to prioritize .env over XML fallback- Remove data.xml (backed up as data.xml.backup)Code Quality:- Fix API actions: POST/PUT now correctly send JSON instead of strings- Fix driver initialization: properly set module-level variables for imports- Add type hints to common_ops.py and api_actions.py- Make headless mode configurable via HEADLESS env variable- Fix fixture scoping to reuse browser for parametrized testsBug Fixes:- Fix driver NoneType errors in ui_actions.py- Fix API key loading with proper fallback handling- Improve Appium server URL construction (supports APPIUM_SERVER or HOST+PORT)Performance Testing:- Add Locust-based performance tests (test_cases/test_performance/)- Implement performance monitoring with system resource tracking- Add performance reporting utilities (HTML, CSV, JSON exports)- Configure performance tests to use .env for host and API keyDocker Support:- Add comprehensive Dockerfile for containerized test execution- Add docker-compose.yml for easy test orchestration- Support for Android emulator and Appium in containers- Automated test execution script in Docker environmentDocumentation:- Add comprehensive docstrings to key functions- Create .env.example with detailed comments- Update .gitignore to exclude .env filesBreaking Changes: None - XML fallback still works for backward compatibility">
+      <option name="closed" value="true" />
+      <created>1764140135009</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1764140135010</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -378,7 +385,8 @@
     <MESSAGE value="add API key to api_actions" />
     <MESSAGE value="add playwright files" />
     <MESSAGE value="allure" />
-    <option name="LAST_COMMIT_MESSAGE" value="allure" />
+    <MESSAGE value="&#10;refactor: migrate configuration to .env and improve code qualityMajor refactoring to improve security, maintainability, and code quality:Configuration:- Migrate from XML to .env files for better security- Add .env.example template with comprehensive documentation- Update get_data() to prioritize .env over XML fallback- Remove data.xml (backed up as data.xml.backup)Code Quality:- Fix API actions: POST/PUT now correctly send JSON instead of strings- Fix driver initialization: properly set module-level variables for imports- Add type hints to common_ops.py and api_actions.py- Make headless mode configurable via HEADLESS env variable- Fix fixture scoping to reuse browser for parametrized testsBug Fixes:- Fix driver NoneType errors in ui_actions.py- Fix API key loading with proper fallback handling- Improve Appium server URL construction (supports APPIUM_SERVER or HOST+PORT)Performance Testing:- Add Locust-based performance tests (test_cases/test_performance/)- Implement performance monitoring with system resource tracking- Add performance reporting utilities (HTML, CSV, JSON exports)- Configure performance tests to use .env for host and API keyDocker Support:- Add comprehensive Dockerfile for containerized test execution- Add docker-compose.yml for easy test orchestration- Support for Android emulator and Appium in containers- Automated test execution script in Docker environmentDocumentation:- Add comprehensive docstrings to key functions- Create .env.example with detailed comments- Update .gitignore to exclude .env filesBreaking Changes: None - XML fallback still works for backward compatibility" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;refactor: migrate configuration to .env and improve code qualityMajor refactoring to improve security, maintainability, and code quality:Configuration:- Migrate from XML to .env files for better security- Add .env.example template with comprehensive documentation- Update get_data() to prioritize .env over XML fallback- Remove data.xml (backed up as data.xml.backup)Code Quality:- Fix API actions: POST/PUT now correctly send JSON instead of strings- Fix driver initialization: properly set module-level variables for imports- Add type hints to common_ops.py and api_actions.py- Make headless mode configurable via HEADLESS env variable- Fix fixture scoping to reuse browser for parametrized testsBug Fixes:- Fix driver NoneType errors in ui_actions.py- Fix API key loading with proper fallback handling- Improve Appium server URL construction (supports APPIUM_SERVER or HOST+PORT)Performance Testing:- Add Locust-based performance tests (test_cases/test_performance/)- Implement performance monitoring with system resource tracking- Add performance reporting utilities (HTML, CSV, JSON exports)- Configure performance tests to use .env for host and API keyDocker Support:- Add comprehensive Dockerfile for containerized test execution- Add docker-compose.yml for easy test orchestration- Support for Android emulator and Appium in containers- Automated test execution script in Docker environmentDocumentation:- Add comprehensive docstrings to key functions- Create .env.example with detailed comments- Update .gitignore to exclude .env filesBreaking Changes: None - XML fallback still works for backward compatibility" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
